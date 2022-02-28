@@ -17,10 +17,24 @@ Additionally, folder **data** includes file **queries.json** with queries for ev
 For extraction features needed for reproducing the model, you could use file **features_extraction.py** with arguments *datafile*, *dataset name*, *category*, and *language* (ISO 639-1 code).
 
 ```python
-python3 features_extraction.py 'taal_out_en.csv' 'Taal' 'Danger' 'en'
+python3 features_extraction.py 'taal_out_en.csv' 'taal' 'Danger' 'en'
 ```
 
 The output files with text features, similarity features, and sentence embeddings vectors will be stored in the same directory.
+
+
+
+## Classification
+
+For training and evaluating the classification model, you could execute classification.py script with the arguments *dataset name* and *test language* (ISO 639-1 code of the test language. The algorithm will train on all other languages allowed for the event). 
+
+```python
+python3 classification.py 'australia' 'en'
+```
+
+
+
+Also, it is necessary to have three files in the same directory for every language in the dataset prepared using feature_extraction.py. For Taal volcano eruption set in English it would be next files: *taal_en.csv*, *taal_en_laser_features.csv*, *taal_en_text_features.to_csv*.
 
 
 

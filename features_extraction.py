@@ -278,11 +278,11 @@ def get_query(dataset, category):
 
 
 
-# example: features_extraction.py 'taal_out_en.csv' 'Taal' 'Danger' 'en'
+# example: features_extraction.py 'taal_out_en.csv' 'taal' 'Danger' 'en'
 
 #data_path = 'taal_out_en.csv'
 #lang = 'en'
-#query_dataset = 'Taal'
+#query_dataset = 'taal'
 #query_category = 'Danger'
 
 data_path = sys.argv[1]
@@ -290,7 +290,7 @@ query_dataset = sys.argv[2]
 query_category = sys.argv[3]
 lang = sys.argv[4]
 
-query_path = 'data/queries.json'
+query_path = 'queries.json'
 
 data = pd.read_csv(data_path)
 query = get_query(query_dataset, query_category)
