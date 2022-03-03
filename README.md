@@ -38,6 +38,16 @@ Also, it is necessary to have three files in the same directory for every langua
 
 
 
+## Summarization
+
+For executing summarization script necessary four files for every language in dataset prepared with use of feature_extraction.py. Please, don't forget files with query-similatities features. Also it necessary to have translation of tweets from languages to English (translated texts should be stored in column 'en_texts')
+
+```python
+python3 sum.py 'fukushima' 'Casualties'
+```
+
+
+
 ## Instllation
 
 Python 3.7.2

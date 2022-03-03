@@ -6,12 +6,6 @@ import spacy
 import numpy as np
 import pandas as pd
 
-from laserembeddings import Laser
-from sklearn.pipeline import Pipeline
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfTransformer
-
-
 from sklearn.metrics import f1_score
 from sklearn.metrics import roc_auc_score
 from sklearn.metrics import accuracy_score
