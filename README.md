@@ -51,3 +51,18 @@ python3 sum.py 'fukushima' 'Casualties'
 ## Instllation
 
 Python 3.7.2
+
+## Paper
+
+The pre-print of the paper on [ArXiv](https://arxiv.org/abs/2204.10230).
+
+If you use this code in your research, please kindly cite our paper:
+
+```
+@article{vitiugin2022cross,
+  title={Cross-Lingual Query-Based Summarization of Crisis-Related Social Media: An Abstractive Approach Using Transformers},
+  author={Vitiugin, Fedor and Castillo, Carlos},
+  journal={arXiv preprint arXiv:2204.10230},
+  year={2022}
+}
+```
